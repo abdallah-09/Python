@@ -1,0 +1,12 @@
+def tma_answer(string,index):
+    userstring=input("Please enter your word :  ")
+    userindex=eval(input("Please enter the index you want to remove :  "))
+    if userstring == ' ' :
+        print('please try again...you cannot enter empty input')
+    elif userindex > len(userstring):
+        print('please try again...out of range')
+    else:
+        ModifiedString = userstring[: userindex : ] + userstring [userindex +1 : : ]
+        print('Modified String : ' ,ModifiedString )
+    return [userstring,userindex]
+start=tma_answer("userstring","userindex")
